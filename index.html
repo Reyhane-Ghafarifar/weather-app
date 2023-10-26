@@ -23,69 +23,72 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <div class="p-5 border border-0 rounded shadow" id="content">
-        <form class="row g-3 d-flex justify-content-center pt-3 pb-3">
-          <div class="col-8">
-            <input
-              class="form-control text-secondary border-0 fs-4 p-3"
-              type="text"
-              placeholder="Enter a city..."
-            />
-          </div>
-          <div class="col-auto">
-            <input type="submit" value=" search " class="form-control border-0 fs-4 p-3" />
-          </div>
-        </form>
-        <div class="weather-info d-flex my-5 border-bottom pb-5">
-            <p class="p-2 align-self-center fs-1 me-5" id="city">
-              Tehran 
-              <p class="align-self-center fs-1 me-5" id="date">Friday 01:52</p>
-            </p>
-            <div class="p-2 d-flex flex-column align-items-center">
-              <p>
-                <i class="fa-solid fa-cloud fa-fade mb-0"></i>
-              </p>
-              <p class="my-0 text-secondary fs-5" id="description">Partly Cloudy</p>
-              <p class="my-0 text-secondary fs-5" id="humidity">Humidity 25%</p>
-            </div>
-            <p class="current-temperature ms-auto p-2 align-self-center me-2" id="temp">
-              19
-            </p>
-            <p class="fs-4 align-self-center me-2">°C</p>
+    <div
+      class="container p-5 border border-0 rounded shadow"
+      id="content"
+    >
+      <form class="row g-3 d-flex justify-content-center">
+        <div class="col-8">
+          <input
+           type="text"
+            class="form-control fs-3 text-secondary"
+            id="enterCity"
+            placeholder="Enter a city..."
+          />
         </div>
-          <div class="Daily-Forecast mt-2">
-            <p class="fs-1 ms-2 p-2">Daily Forecast</p>
-            <div class="d-flex justify-content-evenly text-center">
-              <div>
-                <i class="fa-solid fa-sun"></i>
-                <p class="text-secondary fs-3 align-self-center">Thu</p>
-                <p class="text-secondary fs-3 align-self-center">100°</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-sun"></i>
-                <p class="text-secondary fs-3 align-self-center">Fri</p>
-                <p class="text-secondary fs-3 align-self-center">102°</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-sun"></i>
-                <p class="text-secondary fs-3">Sat</p>
-                <p class="text-secondary fs-3">101°</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-cloud"></i>
-                <p class="text-secondary fs-3">Sun</p>
-                <p class="text-secondary fs-3">100°</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-sun"></i>
-                <p class="text-secondary fs-3">Mon</p>
-                <p class="text-secondary fs-3">102°</p>
-              </div>
-            </div>
-          </div>
-      </div>
-      <footer><a class="text-center d-block fs-6" href="https://github.com/Reyhane-Ghafarifar/weather-app">my github repository </a></footer>
+        <div class="col-auto">
+          <input type="submit" value="search" class="form-control fs-3 bg-danger text-white" />
+        </div>
+      </form>
+      <div class="weather-info d-flex my-5 border-bottom pb-5">
+        <p class="p-2 align-self-center fs-1 me-5" id="city">
+          Tehran 
+          <p class="align-self-center fs-1 me-5" id="date">Friday 01:52</p>
+        </p>
+        <div class="p-2 d-flex flex-column align-items-center">
+          <p>
+            <i class="fa-solid fa-cloud fa-fade mb-0"></i>
+          </p>
+          <p class="my-0 text-secondary fs-5" id="description">Partly Cloudy</p>
+          <p class="my-0 text-secondary fs-5" id="humidity">Humidity 25%</p>
+        </div>
+        <p class="current-temperature ms-auto p-2 align-self-center me-2" id="temp">
+          19
+        </p>
+        <p class="fs-4 align-self-center me-2">°C</p>
     </div>
+      <div class="Daily-Forecast mt-2">
+        <p class="fs-1 ms-2 p-2">Daily Forecast</p>
+        <div class="d-flex justify-content-evenly text-center">
+          <div>
+            <i class="fa-solid fa-sun"></i>
+            <p class="text-secondary fs-3 align-self-center">Thu</p>
+            <p class="text-secondary fs-3 align-self-center">100°</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-sun"></i>
+            <p class="text-secondary fs-3 align-self-center">Fri</p>
+            <p class="text-secondary fs-3 align-self-center">102°</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-sun"></i>
+            <p class="text-secondary fs-3">Sat</p>
+            <p class="text-secondary fs-3">101°</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="text-secondary fs-3">Sun</p>
+            <p class="text-secondary fs-3">100°</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-sun"></i>
+            <p class="text-secondary fs-3">Mon</p>
+            <p class="text-secondary fs-3">102°</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer><a class="text-center d-block fs-5 text-danger" href="https://github.com/Reyhane-Ghafarifar/weather-app">my github repository </a></footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
