@@ -5,12 +5,21 @@ html {
 #content {
     background-color: #25254F;
     color: white;
-    max-width: 80rem;
+    max-width: 75rem;
     margin: 4rem auto 0;
+    padding: 3rem;
 }
 
-  i,
   .current-temperature {
     font-size: 4.5rem;
   }
   
+  @media screen and (max-width: 810px) {
+    img {
+        width: 80%;
+    }
+    #content {
+        max-width: 37rem;
+        padding: 3rem 0.5rem;
+    }
+  }
