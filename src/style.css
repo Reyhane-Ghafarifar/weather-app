@@ -15,9 +15,6 @@ html {
   }
   
   @media screen and (max-width: 810px) {
-    img {
-        width: 80%;
-    }
     #content {
         max-width: 38rem;
         padding: 3rem 0.5rem;
