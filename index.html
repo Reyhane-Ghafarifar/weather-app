@@ -24,20 +24,20 @@
   </head>
   <body>
     <div
-      class="container p-5 border border-0 rounded shadow"
+      class="container p-5 border border-0 rounded shadow-lg"
       id="content"
     >
       <form class="row g-3 d-flex justify-content-center">
         <div class="col-8">
           <input
            type="text"
-            class="form-control fs-3 text-secondary"
+            class="form-control fs-3 text-secondary shadow"
             id="enterCity"
             placeholder="Enter a city..."
           />
         </div>
         <div class="col-auto">
-          <input type="submit" value="search" class="form-control fs-3" />
+          <input type="submit" value="search" class="form-control fs-3 shadow" />
         </div>
       </form>
       <div class="weather-info d-flex my-5 border-bottom pb-5">
@@ -61,34 +61,34 @@
         <p class="fs-1 ms-2 p-2">Daily Forecast</p>
         <div class="d-flex justify-content-evenly text-center">
           <div>
-            <i class="fa-solid fa-sun"></i>
+            <i><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-day.png" alt=""></i>
             <p class="text-secondary fs-3 align-self-center">Thu</p>
-            <p class="text-secondary fs-3 align-self-center">100°</p>
+            <p class="text-secondary fs-3 align-self-center">90°</p>
           </div>
           <div>
-            <i class="fa-solid fa-sun"></i>
+            <i><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" alt=""></i>
             <p class="text-secondary fs-3 align-self-center">Fri</p>
             <p class="text-secondary fs-3 align-self-center">102°</p>
           </div>
           <div>
-            <i class="fa-solid fa-sun"></i>
+            <i><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt=""></i>
             <p class="text-secondary fs-3">Sat</p>
             <p class="text-secondary fs-3">101°</p>
           </div>
           <div>
-            <i class="fa-solid fa-cloud"></i>
+            <i><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" alt=""></i>
             <p class="text-secondary fs-3">Sun</p>
             <p class="text-secondary fs-3">100°</p>
           </div>
           <div>
-            <i class="fa-solid fa-sun"></i>
+            <i><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" alt=""></i>
             <p class="text-secondary fs-3">Mon</p>
             <p class="text-secondary fs-3">102°</p>
           </div>
         </div>
       </div>
     </div>
-    <footer><a class="text-center d-block fs-5 text-secondary" href="https://github.com/Reyhane-Ghafarifar/weather-app">my github repository </a></footer>
+    <footer><a class="text-center d-block fs-5 text-secondary" target="_blank" href="https://github.com/Reyhane-Ghafarifar/weather-app">my github repository </a></footer>
     <script src="src/index.js"></script>
   </body>
 </html>
