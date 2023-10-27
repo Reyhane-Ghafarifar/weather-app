@@ -1,9 +1,10 @@
 html {
     font-size: 62.5%;
   }
-  
+
 #content {
-    background-color: #f3f3f3;
+    background-color: #252525;
+    color: white;
     max-width: 75rem;
     margin: 4rem auto;
 }

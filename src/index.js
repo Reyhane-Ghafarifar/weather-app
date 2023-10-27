@@ -30,17 +30,19 @@ function signUp(event) {
   let enterCity = document.querySelector("#enterCity");
   let city = document.querySelector("#city");
   city.innerHTML = enterCity.value;
-  let apiKey = "c9f0a7a50c89ccf6ca3b542737bca2d2";
-let api = `https://api.openweathermap.org/data/2.5/weather?q=${enterCity.value}&units=metric&appid=${apiKey}`;
+  let apiKey = "2o51771014b5ae643a09fe7f96612tc4";
+let api = `https://api.shecodes.io/weather/v1/forecast?query=${enterCity.value}&key=${apiKey}&units=metric`;
 axios.get(api).then(temp);
 }
 
 function temp(response) {
   let temperature = document.querySelector("#temp");
-  temperature.innerHTML = Math.round(response.data.main.temp);
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#description").innerHTML =response.data.weather[0].main;
-    document.querySelector("#humidity").innerHTML = `Humidity is ${response.data.main.humidity}%`;
+  temperature.innerHTML = Math.round(response.data.daily[0].temperature.day);
+  document.querySelector("#city").innerHTML = response.data.city;
+  document.getElementById("current-icon").src=response.data.daily[0].condition.icon_url;
+  document.querySelector("#description").innerHTML =response.data.daily[0].condition.description;
+document.querySelector("#humidity").innerHTML = `Humidity is ${response.data.daily[0].temperature.humidity}%`;
+    console.log(response.data.daily[0].condition.icon_url);
 }
 
 
