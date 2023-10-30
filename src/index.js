@@ -55,7 +55,7 @@ document.getElementById("secondDayIcon").src=response.data.daily[2].condition.ic
 document.getElementById("thirdDayIcon").src=response.data.daily[3].condition.icon_url;
 document.getElementById("fourthDayIcon").src=response.data.daily[4].condition.icon_url;
     console.log(response.data);
-    console.log(response.data.daily[1].time)
+    console.log(response.data.daily[1].temperature)
 }
 
 

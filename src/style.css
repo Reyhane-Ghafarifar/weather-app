@@ -16,10 +16,15 @@ html {
   
   @media screen and (max-width: 760px) {
     img {
-        width: 80%;
+        width: 100%;
     }
     #content {
         max-width: 38rem;
         padding: 3rem 0.5rem;
+    }
+
+    .Daily-Forecast {
+      display: flex;
+    flex-wrap: wrap;
     }
   }
