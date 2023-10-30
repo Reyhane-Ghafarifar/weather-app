@@ -58,10 +58,10 @@ document.querySelector("#first-max-temp").innerHTML = `${Math.round(response.dat
 document.querySelector("#second-max-temp").innerHTML = `${Math.round(response.data.daily[2].temperature.maximum)}°`;
 document.querySelector("#third-max-temp").innerHTML = `${Math.round(response.data.daily[3].temperature.maximum)}°`;
 document.querySelector("#fourth-max-temp").innerHTML = `${Math.round(response.data.daily[4].temperature.maximum)}°`;
-document.querySelector("#first-max-temp").innerHTML = `${Math.round(response.data.daily[1].temperature.minimum)}°`;
-document.querySelector("#second-max-temp").innerHTML = `${Math.round(response.data.daily[2].temperature.minimum)}°`;
-document.querySelector("#third-max-temp").innerHTML = `${Math.round(response.data.daily[3].temperature.minimum)}°`;
-document.querySelector("#fourth-max-temp").innerHTML = `${Math.round(response.data.daily[4].temperature.minimum)}°`;
+document.querySelector("#first-min-temp").innerHTML = `${Math.round(response.data.daily[1].temperature.minimum)}°`;
+document.querySelector("#second-min-temp").innerHTML = `${Math.round(response.data.daily[2].temperature.minimum)}°`;
+document.querySelector("#third-min-temp").innerHTML = `${Math.round(response.data.daily[3].temperature.minimum)}°`;
+document.querySelector("#fourth-min-temp").innerHTML = `${Math.round(response.data.daily[4].temperature.minimum)}°`;
     console.log(response.data);
     console.log(response.data.daily[1].temperature)
 }
