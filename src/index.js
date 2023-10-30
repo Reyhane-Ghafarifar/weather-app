@@ -50,6 +50,10 @@ function temp(response) {
   document.getElementById("current-icon").src=response.data.daily[0].condition.icon_url;
   document.querySelector("#description").innerHTML =response.data.daily[0].condition.description;
 document.querySelector("#humidity").innerHTML = `Humidity is ${response.data.daily[0].temperature.humidity}%`;
+document.getElementById("firstDayIcon").src=response.data.daily[1].condition.icon_url;
+document.getElementById("secondDayIcon").src=response.data.daily[2].condition.icon_url;
+document.getElementById("thirdDayIcon").src=response.data.daily[3].condition.icon_url;
+document.getElementById("fourthDayIcon").src=response.data.daily[4].condition.icon_url;
     console.log(response.data);
     console.log(response.data.daily[1].time)
 }
