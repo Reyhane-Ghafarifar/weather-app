@@ -10,6 +10,14 @@ function formatDate(date) {
     "Saturday"
   ];
   let currentDay = days[now.getDay()];
+  let firstDay = days[now.getDay()+1]
+  document.querySelector("#firstDay").innerHTML = firstDay
+  let secondDay = days[now.getDay()+2]
+  document.querySelector("#secondDay").innerHTML = secondDay
+  let thirdDay = days[now.getDay()+3]
+  document.querySelector("#thirdDay").innerHTML = thirdDay
+  let fourthDay = days[now.getDay()+4]
+  document.querySelector("#fourthDay").innerHTML = fourthDay
   let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -42,7 +50,8 @@ function temp(response) {
   document.getElementById("current-icon").src=response.data.daily[0].condition.icon_url;
   document.querySelector("#description").innerHTML =response.data.daily[0].condition.description;
 document.querySelector("#humidity").innerHTML = `Humidity is ${response.data.daily[0].temperature.humidity}%`;
-    console.log(response.data.daily[0].condition.icon_url);
+    console.log(response.data);
+    console.log(response.data.daily[1].time)
 }
 
 
