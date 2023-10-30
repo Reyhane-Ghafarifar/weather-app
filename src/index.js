@@ -54,8 +54,10 @@ document.getElementById("firstDayIcon").src=response.data.daily[1].condition.ico
 document.getElementById("secondDayIcon").src=response.data.daily[2].condition.icon_url;
 document.getElementById("thirdDayIcon").src=response.data.daily[3].condition.icon_url;
 document.getElementById("fourthDayIcon").src=response.data.daily[4].condition.icon_url;
-document.querySelector("#first-max-temp").innerHTML = Math.round(response.data.daily[1].temperature.maximum);
-document.querySelector("#second-max-temp").innerHTML = Math.round(response.data.daily[2].temperature.maximum);
+document.querySelector("#first-max-temp").innerHTML = `${Math.round(response.data.daily[1].temperature.maximum)}°`;
+document.querySelector("#second-max-temp").innerHTML = `${Math.round(response.data.daily[2].temperature.maximum)}°`;
+document.querySelector("#third-max-temp").innerHTML = `${Math.round(response.data.daily[3].temperature.maximum)}°`;
+document.querySelector("#fourth-max-temp").innerHTML = `${Math.round(response.data.daily[4].temperature.maximum)}°`;
     console.log(response.data);
     console.log(response.data.daily[1].temperature)
 }
