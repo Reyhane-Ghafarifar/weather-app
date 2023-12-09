@@ -18,6 +18,7 @@ function formatDate(date) {
   document.querySelector("#thirdDay").innerHTML = thirdDay
   let fourthDay = days[now.getDay()+4]
   document.querySelector("#fourthDay").innerHTML = fourthDay
+  let now = new Date();
   let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
