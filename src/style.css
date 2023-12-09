@@ -4,9 +4,10 @@ html {
 
 #content {
     background-color: #25254F;
+    height: 59rem;
     color: white;
     max-width: 75rem;
-    margin: 4rem auto 0;
+    margin: 2rem auto 0;
     padding: 3rem;
 }
 
