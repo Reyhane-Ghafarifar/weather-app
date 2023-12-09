@@ -10,7 +10,7 @@ function formatDate(date) {
     "Saturday"
   ];
   let currentDay = days[now.getDay()];
-  let firstDay = days[now.getDay()+1]
+  let firstDay = days[{now.getDay()}+1]
   document.querySelector("#firstDay").innerHTML = firstDay
   let secondDay = days[now.getDay()+2]
   document.querySelector("#secondDay").innerHTML = secondDay
@@ -18,7 +18,6 @@ function formatDate(date) {
   document.querySelector("#thirdDay").innerHTML = thirdDay
   let fourthDay = days[now.getDay()+4]
   document.querySelector("#fourthDay").innerHTML = fourthDay
-  let now = new Date();
   let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
