@@ -7,10 +7,17 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
   ];
   let currentDay = days[now.getDay()];
-  let firstDay = days[{now.getDay()}+1]
+  let first = now.getDay()
+  let firstDay = days[now.getDay()+1]
   document.querySelector("#firstDay").innerHTML = firstDay
   let secondDay = days[now.getDay()+2]
   document.querySelector("#secondDay").innerHTML = secondDay
